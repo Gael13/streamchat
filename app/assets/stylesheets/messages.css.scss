@@ -1,0 +1,95 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#chat{
+  background: #EFEFEF;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  max-height: 192px;
+  overflow-y: scroll;
+  padding-left: 10px;
+}
+
+#chat li{
+  font-size: 12px;
+  font-family: monospace;
+  line-height: 18px;
+  list-style: none;
+}
+.new_message{
+  width: 300px;
+  fieldset{
+    border: 0px;
+    clear: both;
+    display: block;
+    float: left;
+    margin: 4.5px 0;
+    padding: 0px;
+  }
+  label{
+    clear: both;
+    display:block;
+    margin-bottom: 9px;
+  }
+  input[type=text],textarea{
+    display: block;
+    float: left;
+    font-size: 14px;
+    padding: 3px 5px;
+  }
+  textarea{
+    padding: 3px 6px;
+    min-width: 297px;
+    max-width: 297px;
+    min-height: 90px;
+  }
+  input[type=button]{
+    font-size:16px;
+  }
+  .btn {
+    -moz-box-shadow:inset 0px 1px 0px 0px #fadce2;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #fadce2;
+    box-shadow:inset 0px 1px 0px 0px #fadce2;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f29eb5), color-stop(1, #c77182) );
+    background:-moz-linear-gradient( center top, #f29eb5 5%, #c77182 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f29eb5', endColorstr='#c77182');
+    background-color:#f29eb5;
+    -webkit-border-top-left-radius:0px;
+    -moz-border-radius-topleft:0px;
+    border-top-left-radius:0px;
+    -webkit-border-top-right-radius:0px;
+    -moz-border-radius-topright:0px;
+    border-top-right-radius:0px;
+    -webkit-border-bottom-right-radius:0px;
+    -moz-border-radius-bottomright:0px;
+    border-bottom-right-radius:0px;
+    -webkit-border-bottom-left-radius:0px;
+    -moz-border-radius-bottomleft:0px;
+    border-bottom-left-radius:0px;
+    text-indent:0;
+    border:1px solid #f28585;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Impact;
+    font-size:24px;
+    font-weight:bold;
+    font-style:normal;
+    height:40px;
+    line-height:40px;
+    width:100px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #b81b1b;
+  }
+  .btn:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c77182), color-stop(1, #f29eb5) );
+    background:-moz-linear-gradient( center top, #c77182 5%, #f29eb5 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c77182', endColorstr='#f29eb5');
+    background-color:#c77182;
+  }.btn:active {
+    position:relative;
+    top:1px;
+  }
+}

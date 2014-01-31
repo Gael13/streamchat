@@ -1,0 +1,19 @@
+<h1>Chatty</h1>
+<ul id="chat">
+  <%= render @messages %>
+</ul>
+
+<%= form_for Message.new, remote: true do |f| %>
+  <fieldset>
+    <%= f.label :name, "Name" %>
+    <%= f.text_field :name, placeholder: "Name" %>
+  </fieldset>
+  <fieldset>
+    <%= f.label :content, "Message" %>
+    <%= f.text_area :content, size: "30x4" %>
+  </fieldset>
+  <fieldset>
+    <%= f.hidden_field :connection_id, value: "" %>
+    <%= f.submit "Send", :class => "btn" %>
+  </fieldset>
+<% end %>
